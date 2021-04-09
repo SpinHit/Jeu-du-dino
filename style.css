@@ -1,0 +1,41 @@
+.dino {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0px;
+  background-image: url('asset/dino.gif');
+}
+
+.obstacle {
+  position: absolute;
+  width: 46px;
+  height: 92px;
+  bottom: 0px;
+  background-image: url('asset/cactus.png');
+}
+/*décor*/
+#container {
+  height:211px; 
+  position:absolute; 
+  bottom:0px;
+  
+}
+.decor {
+  position:absolute; 
+  overflow:hidden; 
+  white-space: nowrap;
+  animation: bannermove 4s linear infinite;
+}
+/*anim du décor pour défiler de gauche a droite*/
+.decor img {    
+  margin: 0 0.5em 
+}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
